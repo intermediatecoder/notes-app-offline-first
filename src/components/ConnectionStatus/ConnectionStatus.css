@@ -1,0 +1,34 @@
+.connection-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 12px;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.status-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.connection-status .status-message {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.connection-status.online .status-indicator {
+  background-color: #4CAF50;
+  box-shadow: 0 0 12px rgba(76, 175, 80, 0.5);
+}
+
+.connection-status.offline .status-indicator {
+  background-color: #f44336;
+  box-shadow: 0 0 12px rgba(244, 67, 54, 0.5);
+} 

@@ -1,0 +1,26 @@
+.sync-notification {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2563eb;
+  color: #fff;
+  padding: 0.7em 2em;
+  border-radius: 0 0 12px 12px;
+  font-weight: 600;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.15);
+  font-size: 1.08rem;
+  letter-spacing: 0.01em;
+  animation: fadeInDown 0.3s;
+}
+.sync-notification.sync-done {
+  background: #22c55e;
+}
+.sync-notification.sync-error {
+  background: #ef4444;
+}
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translate(-50%, -20px); }
+  to { opacity: 1; transform: translate(-50%, 0); }
+} 
